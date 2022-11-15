@@ -24,12 +24,12 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 import { Link } from 'react-router-dom';
 
-function HeadHP () {
+function HeadHP (props) {
     return (
         <div>
 
             <div style={{display: 'table-cell', verticalAlign: 'middle', width: '27rem', height: '5rem', backgroundColor: 'rgba(61,196,252,255)' }} >
-                <Link to='/' className='text-decoration-none'>
+                <Link to={props.target} className='text-decoration-none'>
                     <FontAwesomeIcon icon={faHome} style={{color: 'white'}} size={'2x'} />
                 </Link>
             </div>

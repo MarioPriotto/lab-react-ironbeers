@@ -22,7 +22,7 @@ function Beers() {
 
   const renderBeers = beers.map((beer) => {
       return (
-        <Link key={beer._id} to={`/BeersDetailsId/${beer._id}`} className='text-decoration-none'>
+        <Link key={beer._id} to={`/BeersDetailsId/${beer._id}`} style={{ textDecoration: 'none'}}>
          {console.log(  `/BeersDetailsId/${beer._id}`   )}
           <Card style={{ width: '27rem', height: '12rem' }}>
             <div className='row'>
@@ -31,9 +31,9 @@ function Beers() {
               </div>
               <div className='col-9' style={{textAlign: 'left', display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
                 <Card.Body>
-                  <Card.Title style={{ fontSize: '1.5rem' }} className=''>{beer.name}</Card.Title>
+                  <Card.Title style={{ fontSize: '1.5rem' }} className='text-dark'>{beer.name}</Card.Title>
                   <Card.Text style={{ fontSize: '1.0rem' }} className='text-secondary'>{beer.tagline}</Card.Text>
-                  <Card.Text style={{ fontSize: '0.6rem' }} className='fw-bold'>{beer.contributed_by}</Card.Text>
+                  <Card.Text style={{ fontSize: '0.6rem' }} className='text-dark fw-bold'>{beer.contributed_by}</Card.Text>
                 </Card.Body>
               </div>
             </div>
@@ -44,7 +44,7 @@ function Beers() {
 
   return (
     <div className="Beers">
-         <HeadHP/>
+         <HeadHP target="/" />
          <div style={{ width: '27rem' }}>
             { fetching && <Spinner animation="border" /> }
          </div>

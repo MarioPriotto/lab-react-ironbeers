@@ -23,7 +23,6 @@ function Beers() {
   const renderBeers = beers.map((beer) => {
       return (
         <Link key={beer._id} to={`/BeersDetailsId/${beer._id}`} style={{ textDecoration: 'none'}}>
-         {console.log(  `/BeersDetailsId/${beer._id}`   )}
           <Card style={{ width: '27rem', height: '12rem' }}>
             <div className='row'>
               <div className='col-3'>

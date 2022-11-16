@@ -30,12 +30,12 @@ function BeersDetailsId() {
       <Card.Img style={{ width: '5.3rem', height: '18rem', margin: "0 auto", padding: '20px 12px 20px 12px' }} src={beer.image_url} />
 
       <div className="px-5 d-flex justify-content-between">
-        <p className="fs-1">{beer.name}</p>
+        <p className="text-start fs-1">{beer.name}</p>
         <p className="text-opacity-50 fw-bold fs-1 text-secondary">{beer.attenuation_level}</p>
       </div>
       <div className="px-5 d-flex justify-content-between">
-        <p className="text-opacity-50 fw-bold text-secondary">{beer.tagline}</p>
-        <p className="fw-bold">{beer.first_brewed}</p>
+        <p className="text-start text-opacity-50 fw-bold text-secondary">{beer.tagline}</p>
+        <p className="text-end fw-bold">{beer.first_brewed}</p>
       </div>
 
       { /* não existe CLASSE para justificar no BOOTSTRAP */}
